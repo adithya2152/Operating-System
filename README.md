@@ -43,6 +43,33 @@
    Original String: example
    Reversed String: elpmaxe
 
+   ## `toggle_case()` System Call
+8. **toggle_case() system call**
+### Purpose:
+The `toggle_case()` system call toggles the case of each letter in the input string. Uppercase letters are converted to lowercase, and lowercase letters are converted to uppercase. Non-alphabetical characters remain unchanged.
+
+### Function:
+   -Takes a string 
+   -toggles its Case and returns 
+
+   
+### Explanation of Execution:
+
+1. **Original String**: `"Hi this is AN EXample"`
+2. **Execution of `toggle_case()`**: 
+   - The function iterates through each character in the string:
+     - `H` is converted to `h`
+     - `i` is converted to `I`
+     - `t` is converted to `T`
+     - ... and so on for the rest of the string.
+3. **Final Output**: The string with toggled case is returned: `"hI THIS IS an eXAMPLE"`
+
+This explanation captures both the functional implementation and the execution flow of the `toggle_case()` system call.
+
+
+
+
+
 
 
 
