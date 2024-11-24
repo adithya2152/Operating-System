@@ -1,6 +1,51 @@
 # Operating Systems Project
 
-## QUESTION 1
+## QUESTION 1: System Calls Implementation in xv6
+
+### SYSTEM CALLS IMPLEMENTED
+
+1. **cps()**
+   - **Purpose**: Returns the current status of processes in the system.
+   - **Details**: This system call lists all the processes currently running, their IDs, states (e.g., running, sleeping), and other relevant information.
+
+2. **thread_create()**
+   - **Purpose**: Creates a new thread within a process.
+   - **Details**: Allocates a stack for the new thread and invokes the `clone()` system call to set up the thread's execution context. This enables the creation of new threads to perform concurrent operations within the same process.
+
+3. **thread_join()**
+   - **Purpose**: Waits for a specific thread to finish its execution.
+   - **Details**: When called, it ensures that the parent thread waits until the specified child thread has finished execution before proceeding.
+
+4. **lock_init()**
+   - **Purpose**: Initializes a lock structure used for synchronizing access to shared resources among threads.
+   - **Details**: This is essential in a multithreaded environment to prevent race conditions and ensure data integrity when multiple threads need to access shared resources.
+
+5. **lock_acquire()**
+   - **Purpose**: Acquires the lock to access shared resources.
+   - **Details**: A thread attempts to gain exclusive access to the resource protected by the lock. If the lock is already held by another thread, the calling thread will block until it can acquire the lock.
+
+6. **lock_release()**
+   - **Purpose**: Releases a previously acquired lock.
+   - **Details**: Once a thread has finished using a shared resource, it releases the lock, allowing other threads to acquire it and access the resource.
+
+7. **reverse() system call**
+   - **Purpose**: Reverses a given string and returns the reversed version.
+   - **Function**:
+     - Takes a string as input.
+     - Returns the reversed string.
+
+   #### Execution Example:
+   - **Original String**: `example`
+   - **Reversed String**: `elpmaxe`
+   
+   #### Output:
+   ```c
+   Original String: example
+   Reversed String: elpmaxe
+
+
+
+
 
 ## QUESTION 2
 
