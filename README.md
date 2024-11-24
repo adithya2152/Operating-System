@@ -57,9 +57,8 @@ The `toggle_case()` system call toggles the case of each letter in the input str
 
 #### Input:
 ```c
-char str[] = "Hi this is AN EXample";
-char* result = toggle_case(str);
-printf("Toggled Case String: %s\n", result);
+toggle_case  Hi this is AN EXample
+hi THIS IS an exAMPLE
 ```
 
 
