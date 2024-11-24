@@ -43,9 +43,8 @@
    Original String: example
    Reversed String: elpmaxe
 
-   ## `toggle_case()` System Call
 8. **toggle_case() system call**
-### Purpose:
+** Purpose: **
 The `toggle_case()` system call toggles the case of each letter in the input string. Uppercase letters are converted to lowercase, and lowercase letters are converted to uppercase. Non-alphabetical characters remain unchanged.
 
 ### Function:
